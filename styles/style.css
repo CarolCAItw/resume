@@ -1,0 +1,505 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.orange {
+  position: absolute;
+  top: 0vh;
+  right: 0;
+  z-index: -1;
+  width: 55vw;
+  height: 100vh;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .left {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 500px;
+          flex: 3 1 500px;
+  padding: 2rem;
+}
+
+main .left h1 {
+  font-size: 4rem;
+  color: #e08958;
+  padding-bottom: 1rem;
+}
+
+main .left p {
+  font-size: 1.5rem;
+  padding: 1.5rem 0rem;
+}
+
+main .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+  position: relative;
+}
+
+main .right img {
+  border-radius: 50%;
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  top: 20vh;
+  right: 20vw;
+}
+
+@media screen and (max-width: 1100px) {
+  .orange {
+    opacity: 0.5;
+    height: 150vh;
+  }
+  main .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem;
+  }
+  main .right img {
+    position: static;
+    width: 50vw;
+    height: 50vw;
+    margin-bottom: 2rem;
+  }
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .table {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 500px;
+          flex: 3 1 500px;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+}
+
+main .table table th {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+main .table table tr {
+  border-bottom: 2px solid gray;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+main .table table tr td {
+  padding: 1rem;
+}
+
+main .table table tr:hover {
+  background-color: #ffd2b8;
+}
+
+main .table table a {
+  text-decoration: none;
+  color: #e08958;
+}
+
+main .table table a:hover {
+  color: white;
+}
+
+main .picture {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+  position: relative;
+}
+
+main .picture img {
+  width: 30vw;
+}
+
+main .picture .orangeRect {
+  width: 30vw;
+  height: 75vh;
+  background-color: #e08958;
+  position: absolute;
+  top: 30px;
+  left: 80px;
+  z-index: -1;
+}
+
+.active {
+  color: #e08958;
+}
+
+@media screen and (max-width: 1100px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .picture {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100px;
+            flex: 1 1 100px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .picture img {
+    width: 40vw;
+  }
+  main .picture div.orangeRect {
+    display: none;
+  }
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+}
+
+main .form form {
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1.5rem;
+}
+
+main .form form div {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 0.5rem;
+}
+
+main .form form div label {
+  display: block;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+main .form form div input,
+main .form form div textarea {
+  background-color: #ffaa79;
+  color: white;
+  font-size: 1.25rem;
+  padding: 0.5rem 0.25rem;
+  border: none;
+  width: 100%;
+}
+
+main .form form div input:focus,
+main .form form div textarea:focus {
+  background-color: #ffc7a7;
+}
+
+main .form form div textarea {
+  vertical-align: top;
+}
+
+main .form form button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: #e08958;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  padding: 0.5em 1rem;
+  font-size: 2rem;
+  border-radius: 15px;
+}
+
+main .line {
+  background-color: gray;
+  width: 3px;
+}
+
+main .contact {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+main .contact .content h2 {
+  margin: 1rem 0rem;
+}
+
+@media screen and (max-width: 1100px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+header nav {
+  width: 50%;
+}
+
+header nav ul {
+  padding: 2rem 2rem 2rem 1.5rem;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav ul li {
+  font-size: 1.75rem;
+}
+
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .orange {
+    opacity: 0.5;
+  }
+  header nav ul {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav ul li {
+    padding: 1rem 0rem;
+    border-bottom: 2px solid gray;
+  }
+}
+
+footer a {
+  padding: 1rem;
+}
+
+footer img {
+  width: 3vw;
+}
+
+@media screen and (max-width: 1100px) {
+  .orange {
+    opacity: 0.5;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer img {
+    width: 10vw;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+.active {
+  color: #e08958;
+}
+/*# sourceMappingURL=style.css.map */

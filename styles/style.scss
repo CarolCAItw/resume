@@ -1,0 +1,19 @@
+@import "reset";
+@import "index";
+@import "resume";
+@import "contact";
+@import "nav";
+@import "footer";
+
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+.active {
+  color: #e08958;
+}
